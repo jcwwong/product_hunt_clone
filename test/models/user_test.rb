@@ -6,7 +6,7 @@ class UserTest < ActiveSupport::TestCase
     assert_equal "John Lennon", user.full_name
   end
   test "first_name returns first name" do
-    user = User.new(first_name = "Andy")
+    user = User.new(first_name: "Andy")
     assert_equal "Andy", user.first_name
-    end
+  end
 end
